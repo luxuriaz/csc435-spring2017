@@ -1,0 +1,21 @@
+html {
+  text-align: center;
+}
+
+h1{
+  font-size: 200%;
+}
+ul{
+    float:right;
+    position:relative;
+    left:-25%;
+    text-align:left;
+}
+
+#lie{
+  color: yellow;
+}
+
+.important{
+  font-size: 150%;
+}
