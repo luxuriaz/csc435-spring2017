@@ -6,16 +6,63 @@ h1{
   font-size: 200%;
 }
 ul{
-    float:right;
+    padding-left: 400px;
     position:relative;
     left:-25%;
-    text-align:left;
 }
 
 #lie{
   color: yellow;
 }
+#lie:hover{
+  background-color: black;
+}
 
 .important{
   font-size: 150%;
+}
+.nav{
+  bottom: 0;
+  text-decoration:none;
+}
+.food{
+  height: 250px;
+  background-size: 250px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div>p{
+  height: 270px;
+  background-size: 250px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+p[target=explain]{
+  height: auto;
+  padding-bottom: 40px;
+}
+
+a:link{
+  color:black;
+}
+
+a:visited{
+  color:black;
+}
+
+a:hover{
+  background-color: black;
+}
+
+#pizza{
+  background-image: url("./img/pizza.jpg");
+}
+
+#wing{
+  background-image: url("./img/wing.jpg");
+}
+
+#burger{
+  background-image: url("./img/burger.jpg");
 }
