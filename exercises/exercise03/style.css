@@ -1,0 +1,33 @@
+html {
+  text-align: center;
+}
+
+div{
+  border-style: solid;
+}
+
+
+
+#ListTitle {
+  font: 30px arial, sans-serif;
+}
+
+
+#inputwindow {
+  text-align: left;
+  border-style: none;
+
+}
+
+img{
+  width: 300px;
+}
+
+.explain{
+  color:orange;
+}
+
+
+.CCnumber{
+  background-color: black;
+}
