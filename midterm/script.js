@@ -11,38 +11,35 @@ $(document).ready(function(){
 
       var generate_list = generated_list(all_creatures);
       $("#creatureArea").append(generate_list);
+      $("#creatureArea").css("text-align", "center");
 
       var singleDiv = $("<div />");
       singleDiv.attr({"id":"JustOneDiv"});
       var changeDiv = $("<div/>");
       changeDiv.attr({"id":"changeDiv"});
       var TextDiv = $("<div/>");
-      TextDiv.attr({"id":"TextDiv"});
       var ImgDiv = $("<img/>");
+      var Header_Div = $("<h1/>");
+
       singleDiv.append(changeDiv);
+      changeDiv.append(Header_Div);
       changeDiv.append(TextDiv);
       changeDiv.append(ImgDiv);
 
       $("#creatureArea").append(singleDiv);
       $("#creatureList").change(function() {
-
         var creature_name = this.value;
-        console.log(this.value)
         for (var i = 0;i<all_creatures.length;i++){
           if (all_creatures[i].name == creature_name){
-            $("#TextDiv").text(all_creatures[i].description);
+            Header_Div.attr({"class":"head"}).text(all_creatures[i].name);
+            TextDiv.attr({"id":"TextDiv"}).text(all_creatures[i].description);
             ImgDiv.attr({"src":all_creatures[i].image});
+            //ImgDiv.attr({"height":"500px"});
+            ImgDiv.attr({"id":"singleDivImg"});
+            }
+          }
+          $("#all_creature_div").replaceWith(changeDiv);
 
-
-
-        //    var pictureDiv = $("<div/>");
-          //    pictureDiv ("<img src ='"+all_creatures[i].image +"'>");
-          //    $("#dogsDiv").append(dogDiv);
-}
-}
-$("#all_creature_div").replaceWith(changeDiv);
-              //This code will run when the select changes
-              //this.value will contain the string that was selected in the drop down list (select element)
             });
 
 
@@ -65,13 +62,19 @@ var generated_list=function(all_creatures){
     var AllDiv = $("<div />");
     AllDiv.attr({"id":"all_creature_div"});
     for (var i = 0;i<all_creatures.length;i++){
+      var HeaderDiv = $("<h1/>");
+      HeaderDiv.attr({"class":"head"}).text(all_creatures[i].name);
       var AllTextDiv = $("<div/>");
       AllTextDiv.text(all_creatures[i].description);
       var AllImgDiv = $("<img/>");
       AllImgDiv.attr({"src":all_creatures[i].image});
+      AllImgDiv.attr({"id":"AllDivImg"});
+
+      AllDiv.append(HeaderDiv);
       AllDiv.append(AllTextDiv);
       AllDiv.append(AllImgDiv);
     }
+
       $("#changeDiv").replaceWith(AllDiv);
   });
   listDiv.append(selectArea);

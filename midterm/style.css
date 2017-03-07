@@ -1,0 +1,23 @@
+#singleDivImg {
+height: 500px;
+}
+
+.Head {
+  text-align: center;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+#AllDivImg{
+  height: 300px;
+  }
+
+.head{
+
+  color:brown;
+}
+
+
+html{
+  border-style: solid;
+}
