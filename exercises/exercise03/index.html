@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Best Food House</title>
+    <title>NameList</title>
     <script src="./javascript.js"></script>
     <link rel="stylesheet" href="./style.css"/>
 
@@ -10,9 +10,46 @@
   <header>
   </header>
   <body>
-    <input id = "nameField" type = "text"></input>
-    <button onclick="sumbitPressed();">Submit</button>
-    <h1>List of people</h1>
+    <div id ="inputwindow">
+    <ul>
+      <ol>
+      <a>name  :
+      <input id = "nameField" type = "text"></input>
+    </a>
+    </ol>
+    <ol>
+      <a>address:
+      <input id = "address" type = "text"></input>
+    </a>
+    </ol>
+    <ol>
+    <a>
+      phone :
+      <input id = "phoneNumber" type = "text"></input>
+    </a>
+    </ol>
+    <ol>
+    <a>
+      Credit card number :
+      <input id = "CCnumber" type = "text"></input>
+    </a>
+    </ol>
+    <ol>
+    <a>
+      picture:
+      <input id = "picture" type = "link"></input>
+    </a>
+  </ol>
+</ul>
+    <p class="explain">
+      you can choose cat.jpg dog.jpg or shiba.jpg for your picture
+    </p>
+  </div>
+
+
+
+    <button onclick="sumbitPressed();">Add Person</button>
+    <p id ="ListTitle">List of people</p>
     <div id="nameList">
 
 
